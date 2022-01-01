@@ -72,3 +72,32 @@
 // h1.addEventListener("click", handleTitleClick);
 
 
+// const h1 = document.querySelector("div.hello h1");
+// function handleTitleClick(){
+//   const clickedClass = "clicked";
+//   if(h1.className === clickedClass){
+//     h1.className = "";
+//   }
+//   else{
+//     h1.className = clickedClass;
+//   }
+// }
+
+// h1.addEventListener("click", handleTitleClick);
+
+
+const h1 = document.querySelector("div.hello h1");
+function handleTitleClick(){
+  // const clickedClass = "clicked";
+  // if(h1.classList.contains(clickedClass)){
+  //   h1.classList.remove(clickedClass);
+  // }
+  // else{
+  //   h1.classList.add(clickedClass);
+  // }
+
+  //태그안에 클래스가 있는지 확인해주고 없다면 넣어주고 있다면 빼줌
+  h1.classList.toggle("clicked"); 
+}
+
+h1.addEventListener("click", handleTitleClick);

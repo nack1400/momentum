@@ -12,7 +12,7 @@ function onGeoOk(position){
       const weatherContainer = document.querySelector("#weather span:first-child");
       const city = document.querySelector("#weather span:last-child");
       city.innerText = data.name;
-      weather.innerText = `${data.weather[0].main} / ${data.main.temp}`;
+      weather.innerText = `날씨 : ${data.weather[0].main} / 온도 : ${data.main.temp}`;
     console.log(data.name, data.weather[0].main);
   });
 }
